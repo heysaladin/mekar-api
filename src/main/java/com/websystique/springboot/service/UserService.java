@@ -1,10 +1,9 @@
-package com.websystique.springmvc.service;
+package com.websystique.springboot.service;
+
 
 import java.util.List;
 
-import com.websystique.springmvc.model.User;
-
-
+import com.websystique.springboot.model.User;
 
 public interface UserService {
 	
@@ -18,10 +17,10 @@ public interface UserService {
 	
 	void deleteUserById(long id);
 
-	List<User> findAllUsers(); 
+	List<User> findAllUsers();
 	
 	void deleteAllUsers();
 	
-	public boolean isUserExist(User user);
+	boolean isUserExist(User user);
 	
 }

@@ -1,9 +1,5 @@
-package com.websystique.springmvc.model;
-
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement(name = "user")
+package com.websystique.springboot.model;
+	
 public class User {
 
 	private long id;
@@ -25,7 +21,6 @@ public class User {
 		this.salary = salary;
 	}
 	
-	@XmlElement
 	public long getId() {
 		return id;
 	}
@@ -34,7 +29,6 @@ public class User {
 		this.id = id;
 	}
 
-	@XmlElement
 	public String getName() {
 		return name;
 	}
@@ -43,7 +37,6 @@ public class User {
 		this.name = name;
 	}
 
-	@XmlElement
 	public int getAge() {
 		return age;
 	}
@@ -52,7 +45,6 @@ public class User {
 		this.age = age;
 	}
 
-	@XmlElement
 	public double getSalary() {
 		return salary;
 	}
